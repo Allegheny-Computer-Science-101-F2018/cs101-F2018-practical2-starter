@@ -12,7 +12,7 @@ src/main:
             --fragment "println(" --count 5 --exact
             --fragment "ArrayPrinter.print(" --count 1 --exact
 # --> check the number of commits beyond a threshold
---commits 10
+--commits 15
 # --> check that the program executes and produces 20 lines of output
 --command "gradle -q --console plain run" --executes
 --command "gradle -q --console plain run" --count 10 --exact
