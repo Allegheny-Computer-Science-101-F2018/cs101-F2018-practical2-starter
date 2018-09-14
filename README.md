@@ -141,7 +141,7 @@ This is the standard deviation: 4.80
 In addition to making the checks that are mentioned in the introduction to this
 document and the assignment sheet, your `Swap.java` must:
 
-- practicalone/StatisticsCalculator.java:
+- practicaltwo/StatisticsCalculator.java:
   - Contains at least five multiple-line comments in the JavaDoc standard
   - Contains exactly five of the source code fragment `println(`
   - Contains exactly one of the source code fragment `ArrayPrinter.print(`
