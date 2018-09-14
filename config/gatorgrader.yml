@@ -1,0 +1,22 @@
+---
+name: cmpsc-101-fall-2018-practical2
+break: true
+indent: 4
+---
+# --> check the source code for various characteristics
+# note that without an "--exact" the check is an "at least"
+src/main:
+    java:
+        practicaltwo/StatisticsCalculator.java:
+            --multi 5 --language Java
+            --fragment "println(" --count 5 --exact
+            --fragment "ArrayPrinter.print(" --count 1 --exact
+# --> check the number of commits beyond a threshold
+--commits 10
+# --> check that the program executes and produces 20 lines of output
+--command "gradle -q --console plain run" --executes
+--command "gradle -q --console plain run" --count 10 --exact
+--command "gradle -q --console plain run" --fragment "Displaying" --count 2 --exact
+--command "gradle -q --console plain run" --fragment "6.78" --count 1 --exact
+--command "gradle -q --console plain run" --fragment "23.04" --count 1 --exact
+--command "gradle -q --console plain run" --fragment "4.80" --count 1 --exact
